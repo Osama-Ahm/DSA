@@ -56,6 +56,12 @@ public class Singlylinkedlist {
     public void deleteLast(){
 
         Node current = first;
+        while((current.next).next!=null){
+            current = current.next;
+        }
+        current.next = null;
+        
+        /*Node current = first;
         int length = 0;
         while(current != null){
             length++;
@@ -66,7 +72,7 @@ public class Singlylinkedlist {
             current = current.next;
         }
         current.next = null;
-
+        */
         /*
         Node current = first;
         while(current.next.next != null){
